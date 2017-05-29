@@ -182,7 +182,7 @@ get_tmp_reading()
   clock_time_t next = SENSOR_READING_PERIOD +
     (random_rand() % SENSOR_READING_RANDOM);
 
-  value = tmp_007_sensor.value(TMP_007_SENSOR_TYPE_ALL);
+  value = tmp_007_sensor.value(TMP_007_SENSOR_TYPE_ALL);//git test
 
   if(value == CC26XX_SENSOR_READING_ERROR) {
     printf("TMP: Ambient Read Error\n");
